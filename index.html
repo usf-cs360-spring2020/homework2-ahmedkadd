@@ -32,8 +32,6 @@
   <nav class="navbar is-light" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <!-- TODO: Change link to repository homepage if needed -->
-        <!-- TODO: Change which navbar-item is-active if needed -->
         <a class="navbar-item is-active" href="index.html">
           <span class="icon"><i class="fas fa-home"></i></span>
           <span>Home</span>
@@ -62,7 +60,7 @@
 
         <!-- Right navbar items -->
         <div class="navbar-end">
-          <a class="navbar-item" href="#about" title="About">
+          <a class="navbar-item" href="#grade" title="Grade">
             <span class="icon"><i class="fas fa-tasks"></i></span>
             <span>Grade</span>
           </a>
@@ -85,22 +83,25 @@
           Data Visualization Homework 2
         </h1>
 
-        <p>This would be an excellent place to describe what this page is for, what to find in different sections, describe any motivation or theme behind your visualizations, and so on.</p>
-
         <h2 id="data">Data</h2>
 
-        <p>Include some detailed information about the dataset here. You should <a href="#">add a link</a> to the original dataset. You might also want to quote the license:</p>
+        <p>The dataset comes from <a href="https://opportunityinsights.org/paper/mobilityreportcards/">Opporunity Insights</a> which is a team at Harvard University that researches income segregation and intergenreational mobility.
+          This specific dataset is looking at college students from the 1980, 1981 and 1982 birth cohorts and comparing their income to their parents. The original dataset has 2,202 rows which includes colleges from all over the United States,
+          but I filtered this down to 82 rows which only include the 4-year colleges in California.
+        </p>
 
         <blockquote>
           <p>
-            "This data is made available under the Public Domain Dedication and License v1.0 whose full text can be found at: <a href="http://www.opendatacommons.org/licenses/pddl/1.0/">www.opendatacommons.org/licenses/pddl/1.0/</a>"
+            "As part of our research studies, we put out publicly available datasets that can be used by other researchers and practitioners to support their own work."
           </p>
-          <cite>Put a citation here, possibly link to the dataset license information directly.</cite>
+          <cite><a href="https://opportunityinsights.org/data/">Opporunity Insights Data Policy</a></cite>
         </blockquote>
 
         <p>The different types of columns:</p>
 
         <ol>
+          <li><strong>name:</strong> Name of college.</li>
+
           <li><strong>iclevel:</strong> Four-year or two-year college. Data filtered to include only 4-year colleges.</li>
 
           <li><strong>state:</strong> The US state where the college is located. Data filtered to include only colleges in California.</li>
@@ -116,11 +117,12 @@
 
         <h3 id="wrangling">Wrangling</h3>
 
-        <p>Perhaps you had to do some data wrangling to the original dataset to prepare it for visualization. This would be a great place to discuss some of that wrangling.
+        <p>I narrowed the data down to 4-year colleges in California. I did this by filtering the data in Tableau to only include rows were the state is CA and the iclevel is 1.</p>
+        <p>Some of the colleges in the dataset have a comma in their name, so I used tab-seperated values to format the data instead of comma-seperated values.</p>
 
         <h2 id="grade">Grade</h2>
 
-        <p>I deserve an A on this assignment because I prototyped and implemented a parallel coordinates visualization.</p>
+        <p>I deserve an A for this assignment because I prototyped and implemented a parallel coordinates visualization.</p>
 
         <h2 id="about">About</h2>
 
